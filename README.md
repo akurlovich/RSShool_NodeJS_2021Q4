@@ -6,6 +6,14 @@
 
 `git clone https://github.com/akurlovich/RSShool_NodeJS_2021Q4.git`
 
+Move to folder:
+
+`cd RSShool_NodeJS_2021Q4`
+
+Checkout to branch "Ciphering_CLI_tool":
+
+`git checkout Ciphering_CLI_tool`
+
 Install dependencies:
 
 `npm i`
