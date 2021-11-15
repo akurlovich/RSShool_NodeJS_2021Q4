@@ -8,6 +8,7 @@
   },
   "author": "Artsiom Kurlovich",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }
