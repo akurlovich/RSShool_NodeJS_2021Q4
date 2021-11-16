@@ -3,6 +3,7 @@ const validation = require('./utils/validation.js');
 const { getConfig, getInput, getOutput } = require('./utils/utils.js');
 const { inputStream } = require('./inputStream.js');
 const { transformStream } = require('./transformStream.js');
+const cipher = require('./ciphers/cipher.js');
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -25,6 +26,14 @@ describe('Test CLI config', () => {
   //   expect(getConfig('-c')).toBe(console.error("No config options"));
   // });
 
+  test('Valid input file flag', () => {
+    expect(getInput('-i')).toBe(null);
+  });
+
+  test('Valid ouput file flag', () => {
+    expect(getOutput('-o')).toBe(null);
+  });
+
 });
 
 describe('Test input stream', () => {
@@ -35,8 +44,56 @@ describe('Test input stream', () => {
 });
 
 describe('Test transform stream', () => {
-  test('transform result', () => {
-    expect(transformStream('C1')).toBe('b');
+  //!--- разобраться как работать с классами и как передать в него данные из буфера/файла/командной строки----
+  // test('transform result', () => {
+  //   expect(transformStream('C1')).toBe('b');
+  // });
+
+});
+
+describe('Test cipher function', () => {
+  test('Caeser return code lowercase', () => {
+    expect(cipher('aaa', 'C1')).toBe('bbb');
+  });
+
+  test('Caeser return code lowercase 0', () => {
+    expect(cipher('bbb', 'C0')).toBe('aaa');
+  });
+
+  test('Caeser return code uppercase', () => {
+    expect(cipher('AAA', 'C1')).toBe('BBB');
+  });
+
+  test('Caeser return NOT code', () => {
+    expect(cipher('1!фЫ', 'C1')).toBe('1!фЫ');
+  });
+
+  test('Atbash return code lowercase', () => {
+    expect(cipher('a', 'A')).toBe('z');
+  });
+
+  test('Atbash return code uppercase', () => {
+    expect(cipher('A', 'A')).toBe('Z');
+  });
+
+  test('Atbash return NOT code', () => {
+    expect(cipher('1!фЫ', 'A')).toBe('1!фЫ');
+  });
+
+  test('Rot8 return code lowercase', () => {
+    expect(cipher('a', 'R1')).toBe('i');
+  });
+
+  test('Rot8 return code lowercase 0', () => {
+    expect(cipher('i', 'R0')).toBe('a');
+  });
+
+  test('Rot8 return code uppercase', () => {
+    expect(cipher('A', 'R1')).toBe('I');
+  });
+
+  test('Rot8 return NOT code', () => {
+    expect(cipher('1!фЫ', 'R1')).toBe('1!фЫ');
   });
 
 });

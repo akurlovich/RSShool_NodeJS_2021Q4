@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">18.75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">18.75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,42 +82,42 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const alphabetUpper = alphabet.toUpperCase();
 &nbsp;
-exports.ceasar = <span class="fstat-no" title="function not covered" >(t</span>ext, shift) =&gt; {
-  const map = <span class="cstat-no" title="statement not covered" >Array.prototype.map;</span>
-<span class="cstat-no" title="statement not covered" >  return map.call(text, <span class="fstat-no" title="function not covered" >ch</span>ar =&gt; {</span>
-    const length = <span class="cstat-no" title="statement not covered" >alphabet.length,</span>
-          lengthUpper = <span class="cstat-no" title="statement not covered" >alphabetUpper.length;</span>
-<span class="cstat-no" title="statement not covered" >    if (alphabet.includes(char)) {</span>
-      let position = <span class="cstat-no" title="statement not covered" >(alphabet.indexOf(char) + shift) % length;</span>
-<span class="cstat-no" title="statement not covered" >      position = position &lt; 0 ? length + position : position</span>
-<span class="cstat-no" title="statement not covered" >      return alphabet[position];</span>
+exports.ceasar = (text, shift) =&gt; {
+  const map = Array.prototype.map;
+  return map.call(text, char =&gt; {
+    const length = alphabet.length,
+          lengthUpper = alphabetUpper.length;
+    if (alphabet.includes(char)) {
+      let position = (alphabet.indexOf(char) + shift) % length;
+      position = position &lt; 0 ? <span class="branch-0 cbranch-no" title="branch not covered" >length + position </span>: position
+      return alphabet[position];
     }
-<span class="cstat-no" title="statement not covered" >    if (alphabetUpper.includes(char)) {</span>
-      let position = <span class="cstat-no" title="statement not covered" >(alphabetUpper.indexOf(char) + shift) % lengthUpper;</span>
-<span class="cstat-no" title="statement not covered" >      position = position &lt; 0 ? lengthUpper + position : position</span>
-<span class="cstat-no" title="statement not covered" >      return alphabetUpper[position];</span>
+    if (alphabetUpper.includes(char)) {
+      let position = (alphabetUpper.indexOf(char) + shift) % lengthUpper;
+      position = position &lt; 0 ? <span class="branch-0 cbranch-no" title="branch not covered" >lengthUpper + position </span>: position
+      return alphabetUpper[position];
     }
-<span class="cstat-no" title="statement not covered" >    return char;</span>
+    return char;
   }).join('');
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -127,7 +127,7 @@ exports.ceasar = <span class="fstat-no" title="function not covered" >(t</span>e
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Nov 16 2021 13:25:41 GMT+0300 (Москва, стандартное время)
+                at Tue Nov 16 2021 14:49:24 GMT+0300 (Москва, стандартное время)
             </div>
         </div>
         <script src="../../prettify.js"></script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.15% </span>
+                <span class="strong">39.39% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/33</span>
+                <span class='fraction'>13/33</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>4/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.15% </span>
+                <span class="strong">39.39% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/33</span>
+                <span class='fraction'>13/33</span>
             </div>
         
             
@@ -142,10 +142,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -153,10 +153,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -197,23 +197,23 @@ const getConfig = <span class="fstat-no" title="function not covered" >(f</span>
   }
 };
 &nbsp;
-const getInput = <span class="fstat-no" title="function not covered" >(f</span>lag) =&gt; {
-  const flagIndex = <span class="cstat-no" title="statement not covered" >process.argv.indexOf(flag);</span>
-  const flagLastIndex = <span class="cstat-no" title="statement not covered" >process.argv.lastIndexOf(flag);</span>
-<span class="cstat-no" title="statement not covered" >  if (flagIndex === flagLastIndex) {</span>
-<span class="cstat-no" title="statement not covered" >    return flagIndex !== -1 ? process.argv[flagIndex + 1] : null;</span>
-  } else {
+const getInput = (flag) =&gt; {
+  const flagIndex = process.argv.indexOf(flag);
+  const flagLastIndex = process.argv.lastIndexOf(flag);
+  if (flagIndex === flagLastIndex) {
+    return flagIndex !== -1 ? <span class="branch-0 cbranch-no" title="branch not covered" >process.argv[flagIndex + 1] </span>: null;
+  } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 <span class="cstat-no" title="statement not covered" >    console.error("Input file config duplicate");</span>
 <span class="cstat-no" title="statement not covered" >    process.exit(9);</span>
   }
 };
 &nbsp;
-const getOutput = <span class="fstat-no" title="function not covered" >(f</span>lag) =&gt; {
-  const flagIndex = <span class="cstat-no" title="statement not covered" >process.argv.indexOf(flag);</span>
-  const flagLastIndex = <span class="cstat-no" title="statement not covered" >process.argv.lastIndexOf(flag);</span>
-<span class="cstat-no" title="statement not covered" >  if (flagIndex === flagLastIndex) {</span>
-<span class="cstat-no" title="statement not covered" >    return flagIndex !== -1 ? process.argv[flagIndex + 1] : null;</span>
-  } else {
+const getOutput = (flag) =&gt; {
+  const flagIndex = process.argv.indexOf(flag);
+  const flagLastIndex = process.argv.lastIndexOf(flag);
+  if (flagIndex === flagLastIndex) {
+    return flagIndex !== -1 ? <span class="branch-0 cbranch-no" title="branch not covered" >process.argv[flagIndex + 1] </span>: null;
+  } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 <span class="cstat-no" title="statement not covered" >    console.error("Ouput file config duplicate");</span>
 <span class="cstat-no" title="statement not covered" >    process.exit(9);</span>
   }
@@ -232,7 +232,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Nov 16 2021 13:25:41 GMT+0300 (Москва, стандартное время)
+                at Tue Nov 16 2021 14:49:24 GMT+0300 (Москва, стандартное время)
             </div>
         </div>
         <script src="../../prettify.js"></script>
