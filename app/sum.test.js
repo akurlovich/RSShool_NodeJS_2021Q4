@@ -1,6 +1,7 @@
 const sum = require('./sum');
 const validation = require('./utils/validation.js');
 const { getConfig, getInput, getOutput } = require('./utils/utils.js');
+const { inputStream } = require('./inputStream.js');
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -22,6 +23,13 @@ describe('Test CLI config', () => {
   // test('valid input config', () => {
   //   expect(getConfig('-c')).toBe(console.error("No config options"));
   // });
+
+});
+
+describe('Test input sream', () => {
+  test('input file exist', () => {
+    expect(inputStream('./input.txt').filename).toBe('./input.txt');
+  });
 
 });
 

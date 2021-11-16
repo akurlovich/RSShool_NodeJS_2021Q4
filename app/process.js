@@ -17,7 +17,7 @@ exports.processes = (config, input, output) => {
     outputStream(output),
     error => {
       if (error) {
-        console.error("Somthing gone wrong", error);
+        console.error("Something gone wrong!", error);
         process.exit(9);
       }
     }
