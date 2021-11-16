@@ -16,7 +16,7 @@ const getConfig = (flag) => {
       };
       return process.argv[flagIndex + 1];
     } else {
-      console.log('object')
+      // console.log('object')
       console.error("No config options");
       process.exit(9);
     }
