@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637172051890" clover="3.2.0">
-  <project timestamp="1637172051890" name="All files">
-    <metrics statements="114" coveredstatements="105" conditionals="48" coveredconditionals="43" methods="14" coveredmethods="12" elements="176" coveredelements="160" complexity="0" loc="114" ncloc="114" packages="3" files="10" classes="10"/>
+<coverage generated="1637172496611" clover="3.2.0">
+  <project timestamp="1637172496611" name="All files">
+    <metrics statements="113" coveredstatements="105" conditionals="48" coveredconditionals="43" methods="14" coveredmethods="13" elements="175" coveredelements="161" complexity="0" loc="113" ncloc="113" packages="3" files="10" classes="10"/>
     <package name="app">
-      <metrics statements="13" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="inputStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/inputStream.js">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="15" count="1" type="stmt"/>
@@ -15,11 +15,11 @@
         <line num="29" count="1" type="stmt"/>
       </file>
       <file name="transformStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/transformStream.js">
-        <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
@@ -103,7 +103,7 @@
       </file>
     </package>
     <package name="app.utils">
-      <metrics statements="38" coveredstatements="32" conditionals="18" coveredconditionals="13" methods="4" coveredmethods="4"/>
+      <metrics statements="37" coveredstatements="31" conditionals="18" coveredconditionals="13" methods="4" coveredmethods="4"/>
       <file name="getConfig.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getConfig.js">
         <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -123,9 +123,8 @@
         <line num="35" count="1" type="stmt"/>
       </file>
       <file name="getInput.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getInput.js">
-        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>

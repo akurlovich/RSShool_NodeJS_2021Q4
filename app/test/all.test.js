@@ -5,6 +5,7 @@ const cipher = require('../ciphers/cipher.js');
 const getConfig = require("../utils/getConfig.js");
 const getInput = require("../utils/getInput.js");
 const getOutput = require("../utils/getOutput.js");
+const { Transform } = require("stream");
 
 
 describe('Test validation', () => {
@@ -67,9 +68,9 @@ describe('Test input stream', () => {
 
 describe('Test transform stream', () => {
   //!--- разобраться как работать с классами и как передать в него данные из буфера/файла/командной строки----
-  // test('transform result', () => {
-  //   expect(transformStream('C1')).toBe('b');
-  // });
+  test('transform result', () => {
+    expect(transformStream('C1')).toBeInstanceOf(Transform);
+  });
 
 });
 

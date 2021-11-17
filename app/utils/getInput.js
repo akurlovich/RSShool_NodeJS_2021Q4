@@ -1,5 +1,5 @@
 const getInput = (flag) => {
-  console.log(process.argv)
+  // console.log(process.argv)
   const flagIndex = process.argv.indexOf(flag);
   const flagLastIndex = process.argv.lastIndexOf(flag);
   if (flagIndex === flagLastIndex) {
