@@ -1,13 +1,11 @@
-const sum = require('./sum');
-const validation = require('./utils/validation.js');
-const { getConfig, getInput, getOutput } = require('./utils/utils.js');
-const { inputStream } = require('./inputStream.js');
-const { transformStream } = require('./transformStream.js');
-const cipher = require('./ciphers/cipher.js');
+const validation = require('../utils/validation.js');
+const { inputStream } = require('../inputStream.js');
+const { transformStream } = require('../transformStream.js');
+const cipher = require('../ciphers/cipher.js');
+const getConfig = require("../utils/getConfig.js");
+const getInput = require("../utils/getInput.js");
+const getOutput = require("../utils/getOutput.js");
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
 
 describe('Test validation', () => {
   test('valid confug', () => {
@@ -22,16 +20,32 @@ describe('Test validation', () => {
 
 describe('Test CLI config', () => {
   //!------ наверное нужен MOCK------
-  // test('valid input config', () => {
-  //   expect(getConfig('-c')).toBe(console.error("No config options"));
-  // });
+  test('valid input config', () => {
+    expect(getConfig('-c')).toBe(false);
+  });
 
   test('Valid input file flag', () => {
-    expect(getInput('-i')).toBe(null);
+    expect(getInput('-i')).toBe('-o');
+  });
+
+  test('Valid input doble file flag', () => {
+    expect(getInput('-lll')).toBe(false);
+  });
+
+  test('Valid input file NO flag', () => {
+    expect(getInput('')).toBe(null);
   });
 
   test('Valid ouput file flag', () => {
-    expect(getOutput('-o')).toBe(null);
+    expect(getOutput('-o')).toBe('-lll');
+  });
+
+  test('Valid ouput file flag', () => {
+    expect(getOutput('')).toBe(null);
+  });
+
+  test('Valid ouput doble file flag', () => {
+    expect(getOutput('-lll')).toBe(false);
   });
 
 });

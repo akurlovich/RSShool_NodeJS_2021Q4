@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for app/ciphers/caesar.js</title>
+    <title>Code coverage report for app/utils/getInput.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">app/ciphers</a> caesar.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">app/utils</a> getInput.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -70,66 +70,33 @@
 <a name='L11'></a><a href='#L11'>11</a>
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L14'></a><a href='#L14'>14</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const alphabet = "abcdefghijklmnopqrstuvwxyz";
-const alphabetUpper = alphabet.toUpperCase();
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const getInput = (flag) =&gt; {
+  console.log(process.argv)
+  const flagIndex = process.argv.indexOf(flag);
+  const flagLastIndex = process.argv.lastIndexOf(flag);
+  if (flagIndex === flagLastIndex) {
+    return flagIndex !== -1 ? process.argv[flagIndex + 1] : null;
+  } else {
+    return false;
+    // console.error("Input file config duplicate");
+    // process.exit(9);
+  }
+};
 &nbsp;
-exports.ceasar = (text, shift) =&gt; {
-  const map = Array.prototype.map;
-  return map.call(text, char =&gt; {
-    const length = alphabet.length,
-          lengthUpper = alphabetUpper.length;
-    if (alphabet.includes(char)) {
-      let position = (alphabet.indexOf(char) + shift) % length;
-      // position = position &lt; 0 ? length + position : position
-      // if (position &lt; 0) {
-      //   position = length + position;
-      // }
-      return alphabet[position];
-    }
-    if (alphabetUpper.includes(char)) {
-      let position = (alphabetUpper.indexOf(char) + shift) % lengthUpper;
-      // position = position &lt; 0 ? lengthUpper + position : position
-      return alphabetUpper[position];
-    }
-    return char;
-  }).join('');
-}
-&nbsp;</pre></td></tr></table></pre>
+module.exports = getInput;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

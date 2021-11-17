@@ -8,12 +8,15 @@ exports.ceasar = (text, shift) => {
           lengthUpper = alphabetUpper.length;
     if (alphabet.includes(char)) {
       let position = (alphabet.indexOf(char) + shift) % length;
-      position = position < 0 ? length + position : position
+      // position = position < 0 ? length + position : position
+      // if (position < 0) {
+      //   position = length + position;
+      // }
       return alphabet[position];
     }
     if (alphabetUpper.includes(char)) {
       let position = (alphabetUpper.indexOf(char) + shift) % lengthUpper;
-      position = position < 0 ? lengthUpper + position : position
+      // position = position < 0 ? lengthUpper + position : position
       return alphabetUpper[position];
     }
     return char;

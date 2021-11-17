@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637063364634" clover="3.2.0">
-  <project timestamp="1637063364635" name="All files">
-    <metrics statements="145" coveredstatements="106" conditionals="64" coveredconditionals="37" methods="22" coveredmethods="13" elements="231" coveredelements="156" complexity="0" loc="145" ncloc="145" packages="3" files="10" classes="10"/>
+<coverage generated="1637167974701" clover="3.2.0">
+  <project timestamp="1637167974701" name="All files">
+    <metrics statements="95" coveredstatements="77" conditionals="38" coveredconditionals="32" methods="10" coveredmethods="8" elements="143" coveredelements="117" complexity="0" loc="95" ncloc="95" packages="3" files="8" classes="8"/>
     <package name="app">
-      <metrics statements="37" coveredstatements="18" conditionals="12" coveredconditionals="1" methods="11" coveredmethods="3"/>
-      <file name="customRead.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\customRead.js">
-        <metrics statements="21" coveredstatements="6" conditionals="10" coveredconditionals="0" methods="7" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-      </file>
-      <file name="inputStream.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\inputStream.js">
+      <metrics statements="14" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="inputStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/inputStream.js">
         <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -39,12 +15,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="sum.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\sum.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-      <file name="transformStream.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\transformStream.js">
+      <file name="transformStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/transformStream.js">
         <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -55,25 +26,9 @@
       </file>
     </package>
     <package name="app.ciphers">
-      <metrics statements="67" coveredstatements="67" conditionals="34" coveredconditionals="30" methods="7" coveredmethods="7"/>
-      <file name="atbash.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\ciphers\atbash.js">
-        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-      </file>
-      <file name="caesar.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\ciphers\caesar.js">
-        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="35" coveredstatements="35" conditionals="18" coveredconditionals="18" methods="3" coveredmethods="3"/>
+      <file name="caesar.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/ciphers/caesar.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -83,15 +38,13 @@
         <line num="8" count="13" type="stmt"/>
         <line num="9" count="13" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="6" type="stmt"/>
-        <line num="11" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="6" type="stmt"/>
-        <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
       </file>
-      <file name="cipher.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\ciphers\cipher.js">
+      <file name="cipher.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/ciphers/cipher.js">
         <metrics statements="21" coveredstatements="21" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -115,66 +68,57 @@
         <line num="29" count="11" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
       </file>
-      <file name="rot_8.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\ciphers\rot_8.js">
-        <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-      </file>
     </package>
     <package name="app.utils">
-      <metrics statements="41" coveredstatements="21" conditionals="18" coveredconditionals="6" methods="4" coveredmethods="3"/>
-      <file name="utils.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\utils\utils.js">
-        <metrics statements="33" coveredstatements="13" conditionals="16" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <metrics statements="46" coveredstatements="32" conditionals="18" coveredconditionals="13" methods="4" coveredmethods="4"/>
+      <file name="getConfig.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getConfig.js">
+        <metrics statements="23" coveredstatements="9" conditionals="8" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
       </file>
-      <file name="validation.js" path="E:\MacOS\Work\RSShool_NodeJS_2021Q4\app\utils\validation.js">
+      <file name="getInput.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getInput.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="getOutput.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getOutput.js">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="validation.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/validation.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
