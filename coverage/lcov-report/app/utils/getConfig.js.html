@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">39.13% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/23</span>
+                <span class='fraction'>9/15</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">39.13% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/23</span>
+                <span class='fraction'>9/15</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -97,31 +97,31 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,9 +131,9 @@ const getConfig = (flag) =&gt; {
   const flagIndex = process.argv.indexOf(flag);
   <span class="missing-if-branch" title="if path not taken" >I</span>if ((process.argv[flagIndex + 1]) === undefined) {
 <span class="cstat-no" title="statement not covered" >    return false;</span>
-<span class="cstat-no" title="statement not covered" >    console.error("Config are required");</span>
-    // console.log(process.exit(9))
-<span class="cstat-no" title="statement not covered" >    process.exit(9);</span>
+    // console.error("Config are required");
+    // // console.log(process.exit(9))
+    // process.exit(9);
   }
   const flagLastIndex = process.argv.lastIndexOf(flag);
   if (flagIndex === flagLastIndex) {
@@ -141,21 +141,21 @@ const getConfig = (flag) =&gt; {
       const valid = <span class="cstat-no" title="statement not covered" >validation(process.argv[flagIndex + 1]);</span>
 <span class="cstat-no" title="statement not covered" >      if (!valid) {</span>
 <span class="cstat-no" title="statement not covered" >        return false;</span>
-<span class="cstat-no" title="statement not covered" >        console.error("Config are required");</span>
-<span class="cstat-no" title="statement not covered" >        process.exit(9);</span>
+        // console.error("Config are required");
+        // process.exit(9);
       };
 <span class="cstat-no" title="statement not covered" >      return process.argv[flagIndex + 1];</span>
     } else {
       // console.log('object')
       // console.log(process.exit(9))
       return false
-<span class="cstat-no" title="statement not covered" >      console.error("No config options");</span>
-<span class="cstat-no" title="statement not covered" >      process.exit(9);</span>
+      // console.error("No config options");
+      // process.exit(9);
     }
   } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 <span class="cstat-no" title="statement not covered" >    return false;</span>
-<span class="cstat-no" title="statement not covered" >    console.error("Сonfig duplicate");</span>
-<span class="cstat-no" title="statement not covered" >    process.exit(9);</span>
+    // console.error("Сonfig duplicate");
+    // process.exit(9);
   }
 };
 &nbsp;
@@ -166,7 +166,7 @@ module.exports = getConfig;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Nov 17 2021 20:32:59 GMT+0300 (Moscow Standard Time)
+                at Wed Nov 17 2021 21:00:51 GMT+0300 (Moscow Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

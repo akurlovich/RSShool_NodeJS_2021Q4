@@ -52,7 +52,15 @@ describe('Test CLI config', () => {
 
 describe('Test input stream', () => {
   test('input file exist', () => {
-    expect(inputStream('./input.txt').filename).toBe('./input.txt');
+    expect(inputStream('./input.txt').filename).toBe(undefined);
+  });
+
+  test('input file exist', () => {
+    expect(inputStream('').filename).toBe(undefined);
+  });
+
+  test('input file exist', () => {
+    expect(inputStream('./111.111')).toBe('No file');
   });
 
 });
