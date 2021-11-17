@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:coverage": "jest --coverage -lll -i -o -lll"
+    "test:coverage": "jest --coverage -lll -i -ooo -lll"
   },
   "author": "Artsiom Kurlovich",
   "license": "MIT",

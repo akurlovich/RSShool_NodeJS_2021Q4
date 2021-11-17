@@ -25,7 +25,7 @@ describe('Test CLI config', () => {
   });
 
   test('Valid input file flag', () => {
-    expect(getInput('-i')).toBe('-o');
+    expect(getInput('-i')).toBe('-ooo');
   });
 
   test('Valid input doble file flag', () => {
@@ -37,7 +37,7 @@ describe('Test CLI config', () => {
   });
 
   test('Valid ouput file flag', () => {
-    expect(getOutput('-o')).toBe('-lll');
+    expect(getOutput('-ooo')).toBe('-lll');
   });
 
   test('Valid ouput file flag', () => {

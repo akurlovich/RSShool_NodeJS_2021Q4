@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637167974701" clover="3.2.0">
-  <project timestamp="1637167974701" name="All files">
-    <metrics statements="95" coveredstatements="77" conditionals="38" coveredconditionals="32" methods="10" coveredmethods="8" elements="143" coveredelements="117" complexity="0" loc="95" ncloc="95" packages="3" files="8" classes="8"/>
+<coverage generated="1637170176814" clover="3.2.0">
+  <project timestamp="1637170176814" name="All files">
+    <metrics statements="81" coveredstatements="63" conditionals="34" coveredconditionals="28" methods="8" coveredmethods="6" elements="123" coveredelements="97" complexity="0" loc="81" ncloc="81" packages="3" files="7" classes="7"/>
     <package name="app">
       <metrics statements="14" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
       <file name="inputStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/inputStream.js">
@@ -26,24 +26,7 @@
       </file>
     </package>
     <package name="app.ciphers">
-      <metrics statements="35" coveredstatements="35" conditionals="18" coveredconditionals="18" methods="3" coveredmethods="3"/>
-      <file name="caesar.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/ciphers/caesar.js">
-        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="8" count="13" type="stmt"/>
-        <line num="9" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="17" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-      </file>
+      <metrics statements="21" coveredstatements="21" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
       <file name="cipher.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/ciphers/cipher.js">
         <metrics statements="21" coveredstatements="21" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
