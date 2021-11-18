@@ -1,3 +1,10 @@
+jest.mock('../utils/getConfig.js', () => {
+  return jest.fn((flag) => {
+    if (flag === '-c') return true;
+    return false;
+  })
+});
+
 const validation = require('../utils/validation.js');
 const { inputStream } = require('../inputStream.js');
 const { transformStream } = require('../transformStream.js');
@@ -22,7 +29,9 @@ describe('Test validation', () => {
 describe('Test CLI config', () => {
   //!------ наверное нужен MOCK------
   test('valid input config', () => {
-    expect(getConfig('-c')).toBe(false);
+    const testCon1 = getConfig('-c');
+    expect(testCon1).toBe(true);
+    // expect(getConfig('-c')).toBe(false);
   });
 
   test('Valid input file flag', () => {
