@@ -1,0 +1,16 @@
+{
+  "name": "ciphering_cli-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage -lll -i -klj -lll"
+  },
+  "author": "Artsiom Kurlovich",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1"
+  }
+}
