@@ -27,7 +27,7 @@ describe('Test validation', () => {
 });
 
 describe('Test CLI config', () => {
-  //!------ наверное нужен MOCK------
+  process.argv = ['-lll', '-i', '-klj', '-lll'];
   test('valid input config', () => {
     const testCon1 = getConfig('-c');
     expect(testCon1).toBe(true);
