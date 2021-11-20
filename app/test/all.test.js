@@ -27,7 +27,7 @@ describe('Test validation', () => {
 });
 
 describe('Test CLI config', () => {
-  process.argv = ['-lll', '-i', '-klj', '-lll'];
+  process.argv = ['-o', '-i', './index.txt', '-o'];
   test('valid input config', () => {
     const testCon1 = getConfig('-c');
     expect(testCon1).toBe(true);
@@ -35,11 +35,11 @@ describe('Test CLI config', () => {
   });
 
   test('Valid input file flag', () => {
-    expect(getInput('-i')).toBe('-klj');
+    expect(getInput('-i')).toBe('./index.txt');
   });
 
   test('Valid input doble file flag', () => {
-    expect(getInput('-lll')).toBe(false);
+    expect(getInput('-o')).toBe(false);
   });
 
   test('Valid input file NO flag', () => {
@@ -47,7 +47,7 @@ describe('Test CLI config', () => {
   });
 
   test('Valid ouput file flag', () => {
-    expect(getOutput('-klj')).toBe('-lll');
+    expect(getOutput('-o')).toBe(false);
   });
 
   test('Valid ouput file flag', () => {
@@ -55,7 +55,7 @@ describe('Test CLI config', () => {
   });
 
   test('Valid ouput doble file flag', () => {
-    expect(getOutput('-lll')).toBe(false);
+    expect(getOutput('-o')).toBe(false);
   });
 
 });

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637431577748" clover="3.2.0">
-  <project timestamp="1637431577748" name="All files">
-    <metrics statements="98" coveredstatements="96" conditionals="40" coveredconditionals="40" methods="13" coveredmethods="12" elements="151" coveredelements="148" complexity="0" loc="98" ncloc="98" packages="3" files="9" classes="9"/>
+<coverage generated="1637432774284" clover="3.2.0">
+  <project timestamp="1637432774284" name="All files">
+    <metrics statements="98" coveredstatements="96" conditionals="40" coveredconditionals="39" methods="13" coveredmethods="12" elements="151" coveredelements="147" complexity="0" loc="98" ncloc="98" packages="3" files="9" classes="9"/>
     <package name="app">
       <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <file name="inputStream.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/inputStream.js">
@@ -103,7 +103,7 @@
       </file>
     </package>
     <package name="app.utils">
-      <metrics statements="22" coveredstatements="22" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+      <metrics statements="22" coveredstatements="22" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="3"/>
       <file name="getInput.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getInput.js">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -115,13 +115,13 @@
         <line num="14" count="1" type="stmt"/>
       </file>
       <file name="getOutput.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/getOutput.js">
-        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="2" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
       <file name="validation.js" path="/Volumes/D/GitHub_repo/RSShool_NodeJS_2021Q4/app/utils/validation.js">
